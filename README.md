@@ -17,10 +17,17 @@ I use simple theme https://github.com/bradleytaunt/taunt-jekyll
 
 ### Local generation and preview
 
-It's useful to generate and view content locally before pushing to github.
+It's useful to generate and view content locally before pushing to github:
 
 ```
 jekyll serve --watch --config _config.yml,_config.local.yml
+```
+
+
+To update ruby gems:
+
+```
+bundle update
 ```
 
 There are pages:
@@ -31,10 +38,4 @@ There are pages:
 - 404 (page)
 - tag* (tagpage)
 
-There are layouts:
-
-- default
-- page
-- post
-- tagepage
 
