@@ -3,6 +3,7 @@ layout: post
 title: "Get port mapping in kubernetes cluster"
 description: There are several steps to connect to a kubernetes cluster and see port mapping.
 summary: There are several services hosted by kubernetes cluster. How to obtain the ports they are available for client application?
+tags: kubernetes
 ---
 
 A few days ago I was asked for a way to get external port of the service hosted under kubernetes.

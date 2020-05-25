@@ -2,5 +2,8 @@
     <header role="banner">
         <p><strong>{{ site.title }}</strong> <br> {{ site.tagline }}</p>
         {% include navigation.html %}
+        {% if site.tags != "" %}
+          {% include collecttags.html %}
+        {% endif %}
     </header>
 </div>

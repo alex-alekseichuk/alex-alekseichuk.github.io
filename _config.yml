@@ -31,6 +31,8 @@ version:             1.0.0
 github:
   repo:              https://github.com/alex-alekseichuk/alex-alekseichuk.github.io
 
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile']
+
 # Plugins
 plugins:
   - jekyll-paginate

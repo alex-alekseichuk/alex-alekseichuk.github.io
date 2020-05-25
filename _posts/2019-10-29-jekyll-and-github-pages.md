@@ -3,6 +3,7 @@ layout: post
 title: "Jekyll + GitHub Pages: looking for the perfect blog platform"
 description: It looks like Jekyll + GitHub Pages is the best technical approach for the blogging.
 summary: I'm going to continue blogging for both self-promotion and self-improvement. I'm going to try new approach.
+tags: jekyll github-pages
 ---
 
 I don't remember when I started blogging. Probably 10-12 years ago.

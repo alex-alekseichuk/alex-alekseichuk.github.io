@@ -21,6 +21,14 @@
             <time class="date-day" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d" }}</time>
             <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y" }}</time>
           </span>
+
+          <span>[
+            {% for tag in page.tags %}
+              {% capture tag_name %}{{ tag }}{% endcapture %}
+              <a href="/tag/{{ tag_name }}"><span class="highligher-rouge nobr">{{ tag_name }}</span></a>
+            {% endfor %}
+          ]</span>
+          
           {{ content }}
           <hr>
         </article>
