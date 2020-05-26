@@ -3,7 +3,7 @@ layout: post
 title: "Enums in JavaScript"
 description: There is the best approach to define and use enums in JavaScript.
 summary: There is built-in enums in JavaScript. There is the best approach to define and use enums in JavaScript.
-tags: JavaScript
+tags: javascript
 ---
 
 In multi-layer application it needs to pass error/result codes from provider to the service, or from the service to upper layer.
