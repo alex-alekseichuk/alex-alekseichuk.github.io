@@ -7,12 +7,12 @@ tags: jekyll github nuxt
 ---
 
 I was taking part in the awesome hackathon last weekend.
-For demonstration the SPA web UI, I've done, I used GitHub.io pages free hosting.
+For demonstration of the SPA web UI, I've done, I used GitHub.io pages free hosting.
 I used Vue, Vuex, Vuetify, and Nuxt to implement the application.
 But nuxt places some files into `_nuxt/` directory,
 which is ignored by Jekyll engine on GitHub.io side.
 
 To avoid such a conflict, it's enough to place `.nojekyll` empty file in the root of the repo.
-So, Jekyll engine would be turned off, and you can host your Nuxt based solution.
+So, the Jekyll engine would be turned off, and you can host your Nuxt based solution.
 
 Happy hosting!
