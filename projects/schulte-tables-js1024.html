@@ -1,0 +1,102 @@
+<!doctype html>
+<head>
+	<title>Schulte Tables for js1024 contest</title>
+	<meta name="author" content="Author"></meta>
+	<meta name="description" content="Short description"></meta>
+	<meta name="title" content="Title"></meta>
+	<meta charset=utf-8>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+</head>
+<body id=b>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; overflow: hidden; }
+.p5Canvas { position: relative; }
+</style>
+<script>
+// Entry configuration
+// ===================
+
+var title = "Schulte Tables for js1024 contest"; // this will be assigned automatically
+
+// Your entry goes here 👇
+// =======================
+
+var mf = Math.floor
+var now = () => parseInt(new Date().getTime() / 1000)
+var start
+
+var n = 25
+var numbers = Array(n).fill().map((x, i) => i)
+for (var i=0; i<100; i++) {
+	var j = mf(Math.random() * (n));
+	[numbers[i % n], numbers[j]] = [numbers[j], numbers[i % n]]
+}
+var iNext = 0
+var next = numbers.indexOf(iNext)
+
+var cellSize
+function drawCell(i, fillColor) {
+	var y = mf(i / 5)
+	var x = i % 5
+	fill(fillColor || 255)
+	square(x*cellSize, y*cellSize, cellSize)
+	fill(fillColor ? 255 : 0)
+	text(numbers[i] + 1, x*cellSize + cellSize/2, y*cellSize + cellSize/2)
+}
+
+function setup() {
+	alert('Schulte Tables\n\nClick-count the numbers in order from 1 to 25.\nReady?')
+	cellSize = mf(Math.min(windowWidth/5, windowHeight/5))
+	createCanvas(cellSize*6, cellSize*5+1)
+	textSize(cellSize/3)
+	textAlign(CENTER, CENTER)
+	for (var y=0; y<5; y++)
+		for (var x=0; x<5; x++)
+			drawCell(x + y * 5)
+	start = now()
+}
+
+var isPressed = isShowing =false
+var clicked
+
+function draw() {
+	if (!start)
+		return
+	const actual = mf(mouseX / cellSize) + mf(mouseY / cellSize) * 5
+	if (mouseIsPressed) {
+		if (!isPressed) {
+			isPressed = true
+			clicked = actual
+			isShowing = false
+		}
+		if (clicked === actual) {
+			if (!isShowing) {
+				isShowing = true
+				drawCell(clicked, clicked === next ? 'green' : 'red')
+			}
+		} else {
+			if (isShowing) {
+				isShowing = false
+				drawCell(clicked)
+			}
+		}
+	} else {
+		if (isPressed) {
+			isPressed = false
+			if (clicked === actual) {
+				drawCell(clicked)
+			}
+			if (next === clicked) {
+				if (iNext < n-1)
+					next = numbers.indexOf(++iNext)
+				else {
+					alert(`Done in ${now() - start} seconds.`)
+					start = 0
+				}
+			}
+		}
+	}
+}
+// =======================
+</script>
+</body>
