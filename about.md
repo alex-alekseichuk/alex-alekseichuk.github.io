@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: About Me
 ---
 
 <p class="lead">I'm Alex Alekseichuk, a software develop, and this is my personal blog.</p>

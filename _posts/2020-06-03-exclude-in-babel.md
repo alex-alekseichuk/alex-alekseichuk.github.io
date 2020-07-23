@@ -3,7 +3,7 @@ layout: post
 title: "Exclude in Babel"
 description: Exclude third party libraries in babel webpack loader
 summary: I build complicated application by webpack+babel. It's important to exclude third party libraries loaded from node_modules.
-tags: webpack babel
+tags: webpack babel javascript
 ---
 
 I build complicated application by webpack+babel.

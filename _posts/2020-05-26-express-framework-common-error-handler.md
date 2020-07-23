@@ -3,7 +3,7 @@ layout: post
 title: "Express framework: Common error handler"
 description: Router object for correct registration of common error handler
 summary: There is a workaround for the express framework to register common error handler before concrete routes handlers.
-tags: javascript express
+tags: javascript express nodejs
 ---
 
 The Express framework doesn't allow us to set up a global error handler before assign route handlers.

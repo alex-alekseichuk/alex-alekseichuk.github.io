@@ -3,7 +3,7 @@ layout: post
 title: ".nojekyll file to host Nuxt project on GitHub"
 description: There is a handy tip for serving Nuxt project on GitHub pages hosting
 summary: I'm hosting SPA demo application based on Nuxt on GitHub. But Jekyll engine ignores _nuxt/ dir because of leading underscore. There is the best workaround.
-tags: jekyll github nuxt
+tags: jekyll github nuxt javascript
 ---
 
 I was taking part in the awesome hackathon last weekend.

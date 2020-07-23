@@ -3,7 +3,7 @@ layout: post
 title: "Non-blocking node.js exit on key press"
 description: There is the approach to wait for any key press, then exit the process.
 summary: From time to time it needs to implement some CLI tool. There is the approach to wait for any key press, then exit the process.
-tags: nodejs console
+tags: nodejs console javascript
 ---
 
 From time to time it needs to implement some CLI tool.
