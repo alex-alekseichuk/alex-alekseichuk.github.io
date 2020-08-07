@@ -38,4 +38,9 @@ bundle update
 ```
 
 
+To write about:
+
+- Debug js code: nodejs, mocha test, in browser, vscode
+- console tools: k9s
+- modules and dependencies, DI, IoC via context
 
