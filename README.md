@@ -19,7 +19,7 @@ I use simple theme https://github.com/bradleytaunt/taunt-jekyll
 
 There are tags listed in each post. To update the set of tags in the system and generate each tag page
 ```
-python scripts/tag_generator.py
+python _scripts/tag_generator.py
 ```
 
 ### Local generation and preview
