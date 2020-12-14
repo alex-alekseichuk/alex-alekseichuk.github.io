@@ -1,5 +1,5 @@
 // Straus mini-game
-// by Alexander Alexeychuk kikudjiro@gmail.com
+// by Alexander Alexeychuk alex.alexekseichuk@yandex.com
 // 2013-07-17
 
 Maxim maxim;

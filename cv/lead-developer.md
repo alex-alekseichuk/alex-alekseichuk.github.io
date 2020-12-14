@@ -6,7 +6,7 @@ title: Lead developer
 ### Alexander Alexeychuk
 
 <div><strong>experience</strong>: 20+ years</div>
-<div><strong>email</strong>: alex.alekseichuk@gmail.com</div>
+<div><strong>email</strong>: alex.alekseichuk@yandex.com</div>
 <div><strong>github</strong>: <a href="https://github.com/alex-alekseichuk">https://github.com/alex-alekseichuk</a></div>
 <div><strong>profile</strong>: <a href="https://career.habr.com/alexeychuk">https://career.habr.com/alexeychuk</a></div>
 
