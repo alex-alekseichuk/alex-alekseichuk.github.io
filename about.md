@@ -8,4 +8,4 @@ title: About Me
 I work as the Senior Software Developer and Architect in distributed team remotely.
 I have been very helpful as the only full-stack engineer or team player for decades.
 
-Feel free to hit me up: alex.alekseichuk@yandex.com
+Feel free to hit me up: alex.alekseichuk@gmail.com
