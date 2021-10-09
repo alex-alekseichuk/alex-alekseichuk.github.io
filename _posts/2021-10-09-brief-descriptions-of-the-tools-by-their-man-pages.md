@@ -3,7 +3,7 @@ layout: post
 title: Brieif descriptions of the tools by parsing their man pages
 description: Brieif descriptions of the tools by parsing their man pages
 summary: I've done simple bash script to get the titles of the man pages of a set of unix/linux CLI tools.
-tags: linux, bash, CLI
+tags: linux, bash, cli
 ---
 
 I found nice series of lectures only.
