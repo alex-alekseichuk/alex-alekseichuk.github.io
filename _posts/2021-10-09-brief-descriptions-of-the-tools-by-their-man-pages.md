@@ -6,9 +6,9 @@ summary: I've done simple bash script to get the titles of the man pages of a se
 tags: linux, bash, cli
 ---
 
-I found nice series of lectures only.
+I found nice series of lectures online.
 [One of them](https://www.youtube.com/watch?v=sz_dsktIjt4)
- is about unux/linux CLI tools to process files.
+ is about unix/linux CLI tools to process files.
 
 I wrote simple [bash script](https://gist.github.com/alex-alekseichuk/68f8565d65c61d5260ac22cd0b3e8005):
 
