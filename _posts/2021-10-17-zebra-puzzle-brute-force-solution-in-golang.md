@@ -3,7 +3,7 @@ layout: post
 title: The Zebra Puzzle brute force solution in golang
 description: The Zebra Puzzle brute force solution in golang
 summary: I found the Zebra Puzzle task. I implemented golang brute force program instead of truth table approach.
-tags: golang, brute-force, zebra-puzzle
+tags: golang brute-force zebra-puzzle
 ---
 
 In CS theory book I found the link on interesting Boolean Algebra task.

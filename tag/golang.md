@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "Tag: linux,"
-tag: linux,
+title: "Tag: golang"
+tag: golang
 robots: noindex
 ---
