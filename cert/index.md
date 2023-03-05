@@ -12,38 +12,14 @@ img {
   max-width: 100%;
 }
 
-/* The Masonry Container */
-.masonry {
-  margin: 1.5em auto;
-  max-width: 768px;
-  column-gap: 1.5em;
-}
-
-/* The Masonry Brick */
 .item {
-  background: #fff;
   padding: 1em;
-  margin: 0 0 1.5em;
-}
-
-/* Masonry on medium-sized screens */
-@media only screen and (min-width: 768px) {
-  .masonry {
-    column-count: 3;
-  }
-}
-
-/* Masonry on small screens */
-@media only screen and (max-width: 767px) and (min-width: 540px) {
-  .masonry {
-    column-count: 2;
-  }
 }
 
   </style>
 
 
-<div class="masonry">
+<div>
   <a class="item" href="C-programmer.png" title="C Programmer"><img src="C-programmer.png" alt="C Programmer" /></a>
   <a class="item" href="Crypto1.pdf" title="Cryptography"><img src="Crypto1.png" alt="Cryptography" /></a>
   <a class="item" href="Data.pdf" title="Introduction to Data Science"><img src="Data.png" alt="Introduction to Data Science" /></a>
