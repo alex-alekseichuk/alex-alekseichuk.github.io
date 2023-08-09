@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Plinko</title>
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.55.1/dist/phaser.js"></script>
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<script type="text/javascript">
+
+  const model = {
+    nBuckets: 12,
+
+    launch: function() {
+      let iBucket;
+      while (iBucket === undefined)
+        iBucket = this.getRandomBucket();
+      return iBucket;
+    },
+    getRandomBucket: function() {
+      const rand = Math.random();
+      for (let i = 0; i < this.nBuckets; i++) {
+        if (rand <= this.randMax[i]) return i;
+      }
+    },
+    probs: [
+      0.0004882,
+      0.0053710,
+      0.0268554,
+      0.0805664,
+      0.1611328,
+      0.2255859,
+      0.2255859,
+      0.1611328,
+      0.0805664,
+      0.0268554,
+      0.0053710,
+      0.0004882,
+    ],
+    prizes: [
+      136,
+      6.4,
+      3.2,
+      1.6,
+      0.6,
+      0.3,
+      0.3,
+      0.6,
+      1.6,
+      3.2,
+      6.4,
+      136,
+    ],
+    init: function() {
+      this.randMax = [];
+      let accProb = 0;
+      this.probs.forEach(prob => {
+        this.randMax.push(prob + accProb);
+        accProb += prob;
+      });
+    },
+  };
+
+  model.init();
+
+  var config = {
+    type: Phaser.AUTO,
+    backgroundColor: '#eee',
+    width: 800,
+    height: 600,
+    scene: {
+      preload: preload,
+      create: create,
+      update: update,
+    },
+    scale: {
+      mode: Phaser.Scale.FIT,
+      autoCenter: Phaser.Scale.CENTER_BOTH
+    },
+    physics: {
+      default: 'arcade',
+      arcade: {
+        gravity: { y: 700 },
+        debug: false
+      }
+    },
+  };
+
+  const game = new Phaser.Game(config);
+
+  function preload ()
+  {
+  }
+
+  const xStart = 0;
+  let dx;
+  let rb;
+  let statics;
+  let buckets;
+  let dynamics;
+  let ball;
+
+  function create ()
+  {
+    dx = Math.floor(game.config.width / (model.nBuckets * 2 + 2));
+    const dy = dx;
+    const r = dx / 2 - 3;
+    rb = r - 4;
+
+    const yStart = 3 * dy;
+
+    statics = this.physics.add.staticGroup();
+    buckets = this.physics.add.staticGroup();
+    dynamics = this.physics.add.group();
+
+    for (let iy = 0; iy < model.nBuckets; iy++) {
+      const xRowStart = xStart + (model.nBuckets - iy) * dx;
+      for (let ix = 0; ix < iy+2; ix++) {
+        const x = ix * dx * 2 + xRowStart;
+        const y = iy * dy + yStart;
+        const circle = this.add.circle(x, y, r, 0x101010);
+        circle.bucket = model.nBuckets / 2 - 1 - iy/2 + ix;
+        if (ix > 0) circle.canLeft = true;
+        if (ix < iy+1) circle.canRight = true;
+        statics.add(circle);
+        circle.body.setCircle(r);
+      }
+    }
+
+    for (let ix = 0; ix < model.nBuckets; ix++) {
+      const x = ix * dx * 2 + (2*dx) + xStart;
+      const y = model.nBuckets * dy + yStart;
+      const bucket = this.add.rectangle(x, y, dx + dx/2, dy, 0x009900);
+      bucket.i = ix;
+      buckets.add(bucket);
+    }
+
+    launch(this);
+  }
+
+  function launch(scene) {
+    const x = xStart + (model.nBuckets + 1) * dx;
+    ball = scene.add.circle(x, 0, rb, 0xEE1010);
+    ball.iBucket = model.launch();
+    console.log(`target bucket: ${ball.iBucket}`);
+    dynamics.add(ball);
+    ball.body.setCircle(rb);
+    ball.body.setBounce(.5);
+    ball.body.setCollideWorldBounds(true);
+
+    scene.physics.add.collider(ball, statics, (ball, circle) => {
+      let v;
+      if (ball.iBucket > circle.bucket) v = circle.canRight ? 30 : -30;
+      if (ball.iBucket <= circle.bucket) v = circle.canLeft ? -30 : 30;
+      console.log(`v: ${v}`);
+      ball.body.setVelocityX(v);
+    });
+
+    scene.physics.add.collider(ball, buckets, (ball, bucket) => {
+      dynamics.remove(ball, true, true);
+      console.log(`result bucket: ${bucket.i}`);
+      launch(scene);
+    });
+  }
+
+  function update ()
+  {
+  }
+
+</script>
+
+</body>
+</html>
