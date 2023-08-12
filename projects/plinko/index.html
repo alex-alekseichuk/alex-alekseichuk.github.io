@@ -86,7 +86,7 @@
     physics: {
       default: 'arcade',
       arcade: {
-        gravity: { y: 700 },
+        gravity: { y: 500 },
         debug: false
       }
     },
@@ -126,6 +126,8 @@
         const y = iy * dy + yStart;
         const circle = this.add.circle(x, y, r, 0x101010);
         circle.bucket = model.nBuckets / 2 - 1 - iy/2 + ix;
+        circle.xx = model.nBuckets - 2 - iy + 2*ix;
+        circle.yy = iy;
         if (ix > 0) circle.canLeft = true;
         if (ix < iy+1) circle.canRight = true;
         statics.add(circle);
@@ -148,18 +150,46 @@
     const x = xStart + (model.nBuckets + 1) * dx;
     ball = scene.add.circle(x, 0, rb, 0xEE1010);
     ball.iBucket = model.launch();
+    ball.xBucket = 2 * ball.iBucket;
+    ball.yBucket = model.nBuckets - 1;
+    ball.level = -1;
     console.log(`target bucket: ${ball.iBucket}`);
     dynamics.add(ball);
     ball.body.setCircle(rb);
-    ball.body.setBounce(.5);
+    ball.body.setBounce(1.0, 0.3);
     ball.body.setCollideWorldBounds(true);
 
     scene.physics.add.collider(ball, statics, (ball, circle) => {
+      if (ball.level < circle.yy)
+        ball.level = circle.yy;
+      else
+        return;
       let v;
-      if (ball.iBucket > circle.bucket) v = circle.canRight ? 30 : -30;
-      if (ball.iBucket <= circle.bucket) v = circle.canLeft ? -30 : 30;
+      let leftRightBoth = 2; // 0,1,2
+
+      const h = ball.yBucket - (circle.yy - 1);
+      if (ball.xBucket < circle.xx && circle.xx - ball.xBucket >= h) {
+        leftRightBoth = 0;
+      }
+      if (ball.xBucket > circle.xx && ball.xBucket - circle.xx >= h) {
+        leftRightBoth = 1;
+      }
+      switch (leftRightBoth) {
+        case 0:
+          v = -30;
+          break;
+        case 1:
+          v = 30;
+          break;
+        case 2:
+          if (Math.abs(ball.x - circle.x) < 10.0)
+            v = (Math.random() - 0.5) * 60;
+          break;
+      }
+
       console.log(`v: ${v}`);
-      ball.body.setVelocityX(v);
+      if (v)
+        ball.body.setVelocityX(v);
     });
 
     scene.physics.add.collider(ball, buckets, (ball, bucket) => {
