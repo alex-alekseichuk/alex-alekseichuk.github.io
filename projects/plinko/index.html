@@ -160,10 +160,14 @@
     ball.body.setCollideWorldBounds(true);
 
     scene.physics.add.collider(ball, statics, (ball, circle) => {
-      if (ball.level < circle.yy)
+      if (ball.level < circle.yy) {
         ball.level = circle.yy;
-      else
+      } else if (ball.level === circle.yy) {
         return;
+      } else {
+        ball.body.setVelocityY(30);
+        return;
+      }
       let v;
       let leftRightBoth = 2; // 0,1,2
 
