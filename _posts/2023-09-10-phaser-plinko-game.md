@@ -14,12 +14,9 @@ On the other hand, the physics looks like real one with the gravity and correct 
 
 I used [phaser](https://phaser.io/) framework.
 
+<div id="plinko-game"></div>
+
 <script src="//cdn.jsdelivr.net/npm/phaser@3.55.1/dist/phaser.js"></script>
-<style>
-    body {
-        margin: 0;
-    }
-</style>
 <script type="text/javascript">
 
   const model = {
@@ -80,8 +77,9 @@ I used [phaser](https://phaser.io/) framework.
   var config = {
     type: Phaser.AUTO,
     backgroundColor: '#eee',
-    width: 800,
-    height: 600,
+    parent: 'plinko-game',
+    width: 660,
+    height: 495,
     scene: {
       preload: preload,
       create: create,
@@ -216,6 +214,3 @@ I used [phaser](https://phaser.io/) framework.
   }
 
 </script>
-
-<canvas width="800" height="600" style="width: 1143.33px; height: 857.5px; margin-left: 0px; margin-top: 26px;"></canvas>
-
