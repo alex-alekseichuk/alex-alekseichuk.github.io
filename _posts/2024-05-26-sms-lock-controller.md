@@ -2,8 +2,7 @@
 layout: post
 title: Arduino Sketch for ESP32 controller for unlock by SMS project.
 description: Arduino Sketch for ESP32 controller for unlock by SMS project.
-summary: There was a project for auto-selling and unlock items by SMS.
-I've designed electronic schema based on ESP32 and implemented Arduino Sketch to control it.
+summary: There was a project for auto-selling and unlock items by SMS. I've designed electronic schema based on ESP32 and implemented Arduino Sketch to control it.
 tags: esp32 microcontroller arduino electronics
 ---
 
