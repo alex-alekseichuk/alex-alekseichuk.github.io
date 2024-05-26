@@ -13,7 +13,7 @@ The controller checks the code exists and not used yet,
 then unlock an item from the stack for the user.
 It uses the relay.
 
-![schema](/assets/images/schema.png)
+![schema](/assets/images/2024-05-26-schema.png)
 
 I used [wokwi](https://wokwi.com/) online service and Arduino IDE.
 
