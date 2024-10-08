@@ -1,0 +1,160 @@
+Alexander Alexeychuk
+Java Developer
+Email: alex.alekseichuk@gmail.com
+
+Programming languages, libraries and tools:
+  Java, Spring, 
+  JDBC, Hibernate, Flyway migrations,
+  Servlets, SpringMVC, JSP, JSTL, Struts, Freemarker, JAX-RS,
+  JMS, RabbitMQ, ActiveMQ,
+  Ant, Maven, Gradle,
+  JUnit, Cruise Control,
+  TCP/IP client/server networking,
+  multithreading,
+  Android SDK/NDK,
+  HTML, JavaScript, CSS
+
+Databases:
+  MySQL, PostgereSQL, Sqlite, MSSQL
+  MongoDB, LevelDB, Infobright
+
+Others:
+  IntelliJ IDEA, Eclipse,
+  GOF Patterns, DI, UML,
+  Git, Git-flow, SCRUM, code review,
+
+
+Java Projects:
+
+Project: P2P payments and communications
+2023
+Customer: 1win
+Tools: Kotlin, Spring
+    Fixed issues in legacy code to support compatibility with new microservices
+
+Project: Integrations
+2021
+Customer: Sygnum bank
+Tools: Java, Spring, Spring Boot, AWS
+    Integrate microservices into common deployment process to AWS
+
+Project: Dashboard/Reporting system; Async. jobs; Cache;
+2015-2016
+Customer: Analytics company
+Tools: Gradle, Spring (DI, Security, Data, JDBC), Tomcat, WebSocket, Angular_1, Oracle, MongoDB, ActiveMQ
+  I was working as Full-stack developer.
+  Complex system to collect research data of mobile cell networks,
+  build and run complex Analytics reports,
+  visualize in the form or interactive grids and chars.
+  Reports are building by the runners and update SPA clients asynchronous.
+  I've done app server by Spring.
+  App server communicates with Runner processes via ActiveMQ,
+  and via HTTP and WebSocket with SPA client side.
+  Reports data was cached in MongoDB.
+
+Project: Redmine-GanttProject integrator
+2014
+Customer: Plarium
+Tools: JDBC, JDOM, Jaxen
+    I implemented a tool for import/export data from/to Redmine/GanttProject,
+    to have databases of both system sync.
+
+Project: Android "Shulte Tables" mobile application
+2014    
+Tools: Android SDK
+  I designed, implemented and published android application.
+  It's my own project.
+  I've even made some money directly via Google Play when I was selling paid version.
+    Vadim Li on Sep 18, 2014, at 10:20 PM
+	    Thank you!
+    Ildar Azizbaev on Sep 22, 2014 at 1:05 AM
+	    Best. Developers thank you so much.
+    Dinamic D on 2014-12-04
+      Cool app Good design, good implementation
+  There are other andriod application I've done and published.
+
+Task: TCP server for "Smiles" game in social network
+2013
+Customer: WitegArtStudio
+Tools: JDK, Maven, MySQL
+  There is a multiplayer game hosted in social network
+  I designed and implemented TCP server,
+  so, game-clients connect to it for real-time game sessions.
+  
+Customer: Arkadium company
+2010
+Task: Custom functionality for the system based on Alfresco CMS
+Tools: JDK, Alfresco
+  I implemented several features for the portal based Alfresco CMS
+
+Customer: Buildsite company
+2008
+Task: PDF Generator module
+Tools: JDK, Flying Sourcer
+  I implemented PDF forms generator for buildsite portal
+
+Customer: Miriax company
+2007
+Task: Amanda Document History project
+Tools: JDK, Resin, MySQL, JDBC
+  - desing database
+  - design and implement DB Layer
+  - design and implement web interface
+  - there were 2 more developer in the team.
+
+Customer: Miriax company
+few months, 2006
+Task: Amanda Names project
+Tools: JDK, Resin, Struts, MySQL, JDBC
+  - desing database
+  - design and implement DB Layer
+  - design and implement web interface
+    
+Customer: it-outsource company
+2005
+Task: Evergreen web project
+Tools: Java, Tomcat, Servlets, Firebird SQL server
+  - Database design
+  - HTML templates implementation
+  - Web engine desing and implementation
+
+Customer: it-outsource company
+2005
+Task: Server side of Client-Server application project
+Tools: Java, Firebird SQL server, Flash
+  - Database design
+  - Server side desing and implementation
+
+Customer: TankHill company
+2000-2003
+Task: StartStorm system for Online Searching Domain Names
+Tools: JDK, MySQL, HTML
+  - project manager
+  - database design
+  - Search engine and parser module
+  - web ui based on Java Servlet
+  - Apache-Fighter J2ME game for mobile 
+
+Customer: ReAct company
+1999-2000
+Task: ShopRobot system for searching for online auctions
+Tools: Linux, JDK, MySQL, HTML, Apache, JServ, JSDK
+  I designed and implemented the engine for crawling and parsing e-commerce sites.
+  There is web ui to handle the engine and browse results.
+  So, it was classic meta-search engine.
+
+
+Certificates:
+  'Scala & Functional Programming' with distinction (Martin Odersky) 2012
+  'C Programmer' cert. by TekMetrics (BrainBench) 1999
+  'SAAS' based on ruby and RoR with TDD and BDD (Armando Fox and David Patterson from UC Berkley) 2012
+  'Cryptography part 1' with distinction (Dan Boneh from Stanford) 2012
+  'Machine Learning' (Andrew Ng from Stanford) 2012
+  'MongoDB Developer' (10gen) 2012
+  'MongoDB DBA' (10gen) 2012
+  'Digital Signal Processing' (Ecole Polytechnique Federale de Lausanne) 2013
+  'The Hardware/Software Interface' (University of Washington) 2013
+  'Introduction to Data Science' (University of Washington) 2013
+  'Creative Programming for Digital Media & Mobile Apps' (the University of London) 2013
+  'Computer Networks' (University of Washington) 2013
+

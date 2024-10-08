@@ -1,0 +1,93 @@
+Alexander Alexeychuk
+Python Developer with 10+ years of experience
+Email: alex.alekseichuk@gmail.com
+
+Education:
+  Simferopol State University
+  Specialization: Computer Science and Math.
+  Honours degree
+
+Work experience:
+  1999-2007 as Software Developer in YesSoftware
+  2007-2010 as Senior Developer in Arkadium
+  2010-2015 as Developer, Team Lead, PM in Plarium
+  2016-2021 as Senior Developer, Team Lead in Tymlez
+  2021-2022 as Developer in Sygnum Bank AG
+  2022-present as Architect, Developer, DevOps in PearlX
+
+
+Skills:
+
+Python:
+  Django, Forms/Widgets, South,
+  Django REST Framework,
+  Flask, SQLAlchemy, alembic, pytest, factory_boy, mock,
+  requests, Beautiful Soup
+
+Web:
+  JavaScript/TypeScript,
+  react, redux, thunk,
+  angular, vue/vuex, backbone/marionette, polymer,
+  mocha/chai/sinon, jest,
+  HTML, CSS/LESS/SASS,
+
+Databases:
+  MySQL, PostgereSQL, Oracle, MSSQL, Sqlite, Firebird,
+  MongoDB,
+  LevelDB, Infobright
+
+Others:
+  docker, git,
+  bash/zsh, vi, GNU tools,
+  UML, OOP Patterns, TDD,
+  Photoshop
+
+
+Most interesting python projects:
+
+For PearlX company
+Onboarding platform
+Design, implement, and devops 
+Tools:
+  back: Python (Flask, SqlAlchemy, Alembic, PyTest), PostgreSQL
+  front: JavaScipt (react, next.js, tailwind)
+  devops: Docker, Gitlab Ci/CD, AWS, CloudFormation
+
+For Lystable projects
++ implement REST API based on microservices architecture
++ added OAuth2 via Google
++ integrated Amazon S3
+Tools: 1-st ver.: django, south, django rest framework,
+    2-nd ver.: py3, flask, pytest, SQLAlchemy, alembic,
+    factory_boy, mock, marshmallow, nameko, boto
+
+For Michael Magnuson
+Web portal: http://www.goodbed.com
++ design and implement regular front-end and back-end stuff
++ special widgets, middleware, parser, tools, etc.
+Tools: Python, Django, South, virtual_env, PIL, postgresql, HTML, CSS, JavaScript, jQuery
+
+For SEO/web_marketing company
+Web automation system
++ design database
++ implement HTML parser
++ implement multithreaded crawler for posting via HTTP based on curl
++ implement plugins system
++ provide optimization for hi speed and low resource using
+Tools: Python, Curl, pyCurl, MySQL
+
+
+Additional Certificates/Courses:
+  'Machine Learning' (Andrew Ng from Stanford) 2012
+  'R Programming' (The Johns Hopkins University) 2014
+  'C Programmer' cert. by TekMetrics (BrainBench) 03.1999
+  'MongoDB Developer' (10gen) 2012
+  'MongoDB DBA' (10gen) 2012
+  'Cryptography part 1' with distinction (Dan Boneh from Stanford) 2012
+  'SAAS' based on ruby and RoR with TDD and BDD (Armando Fox and David Patterson from UC Berkley) 2012
+  'Scala & Functional Programming' with distinction (Martin Odersky) 2012
+  'Digital Signal Processing' (Ecole Polytechnique Federale de Lausanne) 2013
+  'The Hardware/Software Interface' (University of Washington) 2013
+  'Introduction to Data Science' (University of Washington) 2013
+  'Creative Programming for Digital Media & Mobile Apps' (the University of London) 2013
+  'Computer Networks' (University of Washington) 2013
