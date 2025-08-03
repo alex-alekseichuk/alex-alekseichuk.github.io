@@ -14,5 +14,5 @@ ln -s ~/.dotfiles/.zshrc ~/.zshrc
 
 for f in ~/.dotfiles/bin/*; do ln -s $f ~/bin/$(basename $f); done
 
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+RUNZSH=yes CHSH=yes KEEP_ZSHRC=yes sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
