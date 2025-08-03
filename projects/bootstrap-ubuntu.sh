@@ -2,7 +2,7 @@
 cd ~
 apt update -y
 DEBIAN_FRONTEND=noninteractive apt install -y \
-    wget curl git tmux zoxide neovim vifm zsh vimdiff ripgrep
+    wget curl git tmux zoxide neovim vifm zsh ripgrep
 git clone https://github.com/alex-alekseichuk/.dotfiles.git
 mkdir -p ~/bin
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
