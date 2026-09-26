@@ -1,0 +1,105 @@
+Nodejs Developer of scalable solutions with 10+ years of experience
+Alexander Alexeychuk
+Email: alex.alekseichuk@gmail.com
+
+Education:
+  Simferopol State University
+  Degree: MS, honours degree
+  Specialization: Computer Science and Math.
+
+Work experience:
+  2024-now  in BetBoom as as node.js developer
+  2022-2024 in PearlX as as node.js developer and AWS devops
+  2021-2022 in Sygnum AG bank as node.js developer
+  2016-2021 in Tymlez.com as Senior Full-stack Developer
+  2010-2015 in Plarium.com as Lead Developer and PM
+  2007-2010 in Arkadium.com as Senior Developer
+  2000-2007 in YesSoftware.com as Software Developer
+
+Skills:
+  JavaScript, TypeScript,
+  nest.js, express/loopback, koa,
+  pg-promise, MikroOrm/TypeOrm/bookshelf/sequalize, mongoose,
+  undescore/lodash, Socket.IO, WebSocket, meteor.js, jest, mocha/chai/sinon,
+  react/redux/hooks, react-query, next.js, Angular, Vue/Vuex/nuxt,
+  HTML, CSS, Bootstrap, jQuery, PhoneGap, Tailwind
+DB: PostgreSQL, MSSQL, MySQL, Sqlite, MongoDB, LevelDB, Redis, DynamoDB,
+  ClickHouse
+Devops: GitLab, AWS, Azure, Terraform
+Misc.: microservices, webpack, babel, gulp, docker, kubernetes, rancher,
+  nginx, RabbitMQ, NATS, Kafka, prometheus, graphana, git, UML, code review
+
+
+Interesting nodejs projects:
+
+For BetBoom https://loto.sz.kz/
+Design, implement and refactor a set of services to serve high-load traffic of users activity.
+Integration with partners via HTTP and WebSocket APIs.
+Integration with payment providers for payin/payouts.
+Tools: JavaScript, node.js, express, Postgresql, docker, prometheus, graphana, GitLab
+
+For PearlX startup Onboarding system
+Design and implement a system for managing users and documents.
+Gitlab CI/CD to AWS/ECS cluster.
+Tools: JavaScript/TypeScript, nest.js, next.js, react, Postgresql, docker, AWS
+
+For Sygnum AG bank
+Design, implement, CI and deploy scalable services in GitLab and AWS
+Tools: JavaScript/TypeScript, nest.js, express,
+  + Redis, AWS DynamoDB, AWS S3, PostgreSQL,
+  + Kafka, AWS SNS/SQSDesign cloud-ready solutions, implement them.
+Interfaces: HTTPS, WebSocket, pure TCP, STOMP.
+CI and deploy in the cloud the B2B fin-tech. services.
+Introduce TLS and mTLS support/usage in the services and backends.
+Teaching other team members mTLS and cryptography.
+
+Tymlez Blockchain Platform for Tymlez.com
+Tools:
+  JavaScript/TypeScript, express/loopback, nest.js,
+  mocha/chai/sinon, react/next,
+  postgresql, mongodb, rabbitmq,
+  ether/solidity/truffle/open-zeppelin
+Designed and implemented the core of the Blockchain solution.
+Designed and implemented Authentication and Authorization.
+Wallets/keys management on the client side.
+Do Lead Developer role.
+Interview JavaScript developers.
+Code review.
+Help CTO to reach the IPO.
+
+For the 'My Airline' game for social networks
+Tools: JavaScript, nodejs, Mongodb
+Designed and implemented TCP server, the efficient client-server protocol based on TCP.
+Supported high-load traffic and a lot of users.
+I have designed effective solutions by postponing game event handling.
+
+For auction_mobility: Work on REST API backend
+Tools: nodejs, connect, Bluebird, Bookshelf, Postgresql, mocha/chai/sinon
+
+For Plarium.com: CRM application for support department
+Tools: js, meteor.js, mongodb
+
+For Plarium.com: Analytics app.
+Task: design and implement OLAP system
+  to collect a huge amount of logs from the hi-load social game
+  and provide analytics charts and reports
+Tools: nodejs, CoffeeScript, mongodb, Infobright db, backbone.js
+
+
+Certificates/Courses:
+
+'SAAS' based on ruby and RoR with TDD and BDD (Armando Fox and David Patterson from
+UC Berkley) 2012
+'Cryptography part 1' with distinction (Dan Boneh from Stanford) 2012
+'Machine Learning (Andrew Ng from Stanford) 2012
+'Scala & Functional Programming' with distinction (Martin Odersky) 2012
+'MongoDB Developer' (10gen) 2012
+'MongoDB DBA' (10gen) 2012
+'Digital Signal Processing' (Ecole Polytechnique Federale de Lausanne) 2013
+'The Hardware/Software Interface (University of Washington) 2013
+'Introduction to Data Science (University of Washington) 2013
+'Creative Programming for Digital Media & Mobile Apps' (the University of London) 2013
+'Computer Networks' (University of Washington) 2013
+'C Programmer' cert. by TekMetrics (BrainBench) 03.1999
+
+
