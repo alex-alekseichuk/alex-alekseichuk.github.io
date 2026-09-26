@@ -1,0 +1,117 @@
+C/C++ developer
+Alexander Alexeychuk
+Email: alex.alekseichuk@gmail.com
+
+Education: Simferopol State University
+Degree: MS, honours degree
+Specialization: Computer science and mathematics
+Graduated: 1999
+
+
+Programming and technology knowledge:
+
+Programming languages, libraries and tools
+  C/C++, Win32, STL, MFC, COM, ATL/WTL,
+  Assembler, SoftIce, IDA, Olly,
+  Multiprocess, multithreading, IPC,
+  TCP Sockets
+ 
+Databases:
+  MySQL, MSSQL, PostgereSQL, Oracle, Sqlite, Firebird, 
+  MongoDB, LevelDB, Redis
+
+Others:
+  Python, JavaScript, Ruby,
+  Nginx,
+  HTML, CSS,
+  Git, SVN, CVS, hg,
+  UML, Patterns
+
+
+Certificates:
+  'C Programmer' cert. by TekMetrics (BrainBench) 03.1999
+  'SAAS' based on ruby and RoR with TDD and BDD (Armando Fox and David Patterson from UC Berkley) 2012
+  'Cryptography part 1' with distinction (Dan Boneh from Stanford) 2012
+  'Machine Learning' (Andrew Ng from Stanford) 2012
+  'Scala & Functional Programming' with distinction (Martin Odersky) 2012
+  'MongoDB Developer' (10gen) 2012
+  'MongoDB DBA' (10gen) 2012
+  'Digital Signal Processing' (Ecole Polytechnique Federale de Lausanne) 2013
+  'The Hardware/Software Interface' (University of Washington) 2013
+  'Introduction to Data Science' (University of Washington) 2013
+  'Creative Programming for Digital Media & Mobile Apps' (the University of London) 2013
+  'Computer Networks' (University of Washington) 2013
+
+
+Some Project:
+
+For hola.org contribute as C developer
+Tools: gcc, valgrind, vi
+
+Task: special server for track online status and chat function for special communication/media share application
+Tools: linux, postgresql, tcp sockets, gcc, c++, stl, expat, nsis, .net, C#
+  - Desing and implement test environment of client and server as .NET applications
+  - Desing and implemetation linux version of the server application as c++ application
+  - Prepare installation of the client application by nsis installer
+
+Task: DemoCharge product (http://www.yessoftware.com/products/product.php?product_id=19)
+Tools: Win32, C++, zlib, SWF, MP3
+  - tech. analyst
+  - Desing and implemetation SWF module for generation Flash presentations
+
+Task: Implement module for handling Settings area for Enigma communicator device
+Tools: C/C++, STL
+  - design and implement Property Sheet GUI component
+  - design and implement structures and methods for saving data
+
+Task: CodeCharge Studio product (http://www.codecharge.com)
+Tools: Win32, C++, Assembler, Win16, VC++ 1.52, IDA, Olly
+  - Desing and implemetation several low-level programing methods to protect the product against software crackers
+
+Task: ICT Internet Control Tool product
+Tools: Win32, VB, VC++/COM/ATL, IE programming, MS Access, InstallShiled
+  - Database Design
+  - Implementation
+  - Installation creation
+  - lead developer role
+
+Task: Purchase Agent Client
+Tools: Win32, VC++ 6.0, COM, ATL, IE programming, XML
+  - project manager (since 09.2001)
+  - specified COM components
+  - XML handling
+  - installation and update system
+
+Task: eBay Scraper tool. Download via HTTP last add eBay.com listings for statistics
+Tools: Win32, VC++ 6.0, MFC
+  - project manager
+  - database design
+  - portring TPL tech. to Win32
+
+Task: ShopRobot system (version 2.0)
+Tools: UNIX, C, MySQL, Apache, PHP
+  - project manager
+  - database design
+  - design TPL language. (TPL - Text Parser Language) 
+  - design parsing model
+
+Task: Graduation project: Aspect graphs in image recognition
+Tools: Borland C++
+  - design and implement tool for recognition polygons in the bitmap
+
+Task: University term project: Implement 3D simulator of cubic world by ray-tracing method
+Tools: DOS, Borland C++ 3.1
+  - implement ray-tracing method
+  - implement solution for avoiding fish-eye effect problem
+
+Task: Fractal Generator
+Tools: DOS, Borland C++ 3.1
+  - syntax analyzer, files formats, interpreter
+  - desing and implementation
+
+Task: University term project: Tool for 3D visualization of surfaces like z=f(x,y)
+Tools: DOS, Turbo C 2.0
+  - GUI, math. rendering module, syntax analyzer
+  - Z-buffer method implementation
+
+
