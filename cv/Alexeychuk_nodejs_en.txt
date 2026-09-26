@@ -36,7 +36,7 @@ For BetBoom https://loto.sz.kz/
 Design, implement and refactor a set of services to serve high-load traffic of users activity.
 Integration with partners via HTTP and WebSocket APIs.
 Integration with payment providers for payin/payouts.
-Tools: JavaScript, node.js, express, Postgresql, docker, prometheus, graphana, GitLab
+Tools: JavaScript, node.js, express, jest, Postgresql, RabbitMQ, redis, NATS, docker, prometheus, graphana, GitLab, k8s
 
 For PearlX startup Onboarding system
 Design and implement a system for managing users and documents.
