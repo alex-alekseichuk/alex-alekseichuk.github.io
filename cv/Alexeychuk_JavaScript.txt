@@ -1,0 +1,128 @@
+Alex Alekseichuk
+JavaScript Developer
+20+ years of experience
+alex.alekseichuk@gmail.com
+
+
+Programming and technology knowledge:
+  es6, TypeScript, lodash,
+  mocha/chai/sinon, jest, puppeteer
+
+  react, redux, thunk,
+  angular 1/2, vue/vuex, backbone/marionette, polymer,
+  HTML, CSS/LESS/SASS,
+  Bootstrap, Foundation,
+  jqPlot Charts, amCharts, highcharts
+  PhoneGap,
+  
+  nodejs, express/loopback, nest.js, koa, fastify,
+  type-orm, micro-orm, bookshelf, mongoose,
+  Socket.IO, WebSocket, meteor.js
+
+  Docker,
+  webpack, gulp,
+  Git, GitHub, GitLab,
+  UML, Patterns
+  Scrum, Code review,
+
+
+Experience:
+  2024-now  as backend developer in BetBoom
+  2022-2024 as remote JS/Python developer in PearlX.com
+  2021-2022 in Sygnum AG bank as JS developer
+  2016-2021 in Tymlez.com as Senior Full-stack Developer
+  2010-2015 in Plarium.com as Lead Developer and PM
+  2007-2010 in Arkadium.com as Senior Developer
+  2000-2007 in YesSoftware.com as Software Developer
+
+
+Most interesting JavaScript Projects:
+
+Tymlez startup
+Tasks:
+  design/arcitecture of the platform/libs/apps full-stack;
+  authentication/authorization;
+  DI/IoC;
+  code review;
+  tech. interview;
+  implement critical/common modules/apps;
+Tools:
+  js/ts, nodejs, express/loopback/nest.js,
+  react, hooks, react-query, next.js,
+  polymer, vue/vuex,
+  webpack, eslint,
+  mocha/chai/sinon, jest, puppeteer,
+  mongodb, postgresql,
+  docker, gitlab, aws, terraform
+
+Project: Asimus system
+  for customer: Asimus
+Task: implement Web UI to the reports/statistics data of Asismus system
+Tools: HTML, Angular.js, Bootstrap, Highcharts.js
+
+Project: Approve documents system
+  for customer: Sota company
+Tasks:
+	full-stack design and implementation;
+	universal entity/attribute storage
+Tools: react, bootstrap, webpack, .NET Core, Oracle, docker
+
+Project: Universal systems for create and use reports and maps
+  Customer: Sota company
+Tasks: full-stack design and implementation
+Tools: react/redux, bootstrap, webpack, .NET Core, Oracle, docker
+
+Project: Web client SPA for back-office system
+  Customer: GDM-FX company
+Tasks:
+	add more pages/forms;
+	implement DataGrid with a lot of features
+Tools: Angular2, TypeScript
+
+Project: DoublePay Net Web client
+  for customer: Coddy from Texas
+Task: One-page web client to the REST API of existing system.
+Tools: JavaScript, Backbone, Bootstrap, jQuery 
+
+Project: CRM for support department
+  Customer: Plarium
+Tools: meteor.js, js/coffeescript, node.js, mongodb
+
+Project: McDonalds presentation with dynamic items/prices
+Task: implement self-updated SPA solution to represent items
+Tools: HTML, JS, XML
+
+Project: advocaten.nl
+  for customer: Jacob Galama from NL
+Task: Designed and implemented PhoneGap Android application for advocaten.nl + CMS backend
+  Implemented android application as PhoneGap/javascript solution
+  Implemented backend CMS and online updating scheme
+Tools: PhoneGap, jQueryMobile, Backbone.js, Bootstrap
+
+Project: hi-load Social Game 'My Airline'
+  for noname game-dev startup
+Task:
+  Implement server-side
+  Optimize for high-load
+Tools: javascript, nodejs, mongodb
+
+Project: Analytics system
+  for customer: Leon Danilov of Indigo/Plarium company
+Task: design and implement OLAP system to collect huge amount of logs from hi-load social game
+  and provide analytics charts and reports
+Tools: nodejs, IcedCoffeeScript, mongodb, Infobright, backbone.js
+
+
+Additional Certificates/Courses:
+  'C Programmer' cert. by TekMetrics (BrainBench) 03.1999
+  'SAAS' based on ruby and RoR with TDD and BDD (Armando Fox and David Patterson from UC Berkley) 2012
+  'Cryptography part 1' with distinction (Dan Boneh from Stanford) 2012
+  'Machine Learning' (Andrew Ng from Stanford) 2012
+  'Scala & Functional Programming' with distinction (Martin Odersky) 2012
+  'MongoDB Developer' (10gen) 2012
+  'MongoDB DBA' (10gen) 2012
+  'Digital Signal Processing' (Ecole Polytechnique Federale de Lausanne) 2013
+  'The Hardware/Software Interface' (University of Washington) 2013
+  'Introduction to Data Science' (University of Washington) 2013
+  'Creative Programming for Digital Media & Mobile Apps' (the University of London) 2013
+  'Computer Networks' (University of Washington) 2013
