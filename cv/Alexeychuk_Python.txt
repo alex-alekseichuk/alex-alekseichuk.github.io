@@ -1,5 +1,5 @@
 Alexander Alexeychuk
-Python Developer with 10+ years of experience
+Python Developer
 Email: alex.alekseichuk@gmail.com
 
 Education:
@@ -13,7 +13,8 @@ Work experience:
   2010-2015 as Developer, Team Lead, PM in Plarium
   2016-2021 as Senior Developer, Team Lead in Tymlez
   2021-2022 as Developer in Sygnum Bank AG
-  2022-present as Architect, Developer, DevOps in PearlX
+  2022-2024 as Architect, Developer, DevOps in PearlX
+  2024-present as backend developer in BetBoom
 
 
 Skills:
