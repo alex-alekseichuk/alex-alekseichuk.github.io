@@ -1,0 +1,71 @@
++ I designed and implemented a full-stack application for MFC to automate the FAQ department
+  using NLP ML model on the existing FAQ knowledge base and spaCy lib.
+  Tools: Python, fastapi, spaCy.
+  https://github.com/alex-alekseichuk/qa-index
+
++ I Designed and implemented a profanity filter for the web portal.
+  NLP ML model uses spaCy lib under the hood. 
+
++ Design and implement application like 1-st player shooter as course work in university
+    ray-tracing removed the fish-eye effect
+
++ Hack Perl script to have remote shell via the web to hosting server; boss/team/admin were impressed
+
++ Found security hole on code review of the site, that customer sent us as an example; boss/team/customer were impressed
+    HTML, IIS, ASP, MSSQL
+
++ Performance tuning of e-commerce system for high-load; boss/team/customer were impressed
+    FreeBSD, Apache, PHP, MySQL
+
++ Generator of websites screenshot by URL for e-commerce portal, the team were impressed
+    Linux, Perl, ImageMagic
+
++ Designed and implemented web framework and based on it dating website in the very short term; the customer was impressed
+    PHP, HTML, CSS, JavaScript, MySQL
+
++ Virtual machine and special packer for PE-modules (EXE, DLL) code obfuscation against crackers;
+    so, I've protected/saved the CodeChargeStudio brand
+    C/C++, Assembler, IDA Pro, Soft ICE
+
++ Design and implement powerful SWF-byte-code (Flash) engine for DemoCharge application;
+    Translate/re-samle raw video/audio content into flash movie with player
+    the librariy was sold to 3-rd party company later as a product
+    C/C++
+
++ Fast profanity checker by vocabulary tree O(n) for the high-load system; wow effect in the team
+    .NET
+
++ Design and implement a huge web system for Mattel's project myself in the very short term,
+      - used Linq-to-SQL instead of T-SQL
+      - designed and implemented UI Web framework, then use it for UI
+    so, the whole team survive crisis 2008 
+    .NET, Linq_to_SQL, MSSQL, HTML, CSS
+
++ BuildSite web project
+    Perl, Catalyst MVC framework, DBIx::Class, PostgreSQL, HTML, CSS, JavaScript
+
++ Done a lot of amazing features as python/Django/web developer for web portal http://goodbed.com
+    Michael Magnuson is CEO/Owner Michael.Magnuson@gmail.com
+    Python, Django, SQLite, South DB migration, GeoAPI, OpenID, Facebook, and Twitter
+
++ As Lead/PM, handle team/project of several developers in the multiplatform high-load social-net game
+    .NET, C#, MSSQL, Flash, AS3
+
++ Ported AS3 web-based game to android as air application
+
++ Transistor tool for publishing data from spreadsheets to the config; made game designers life fun/easy
+
++ Shulte Tables Android application; users like it very much
+
++ High-load BigData stats/analysis system; implement OLAP by Infobright;
+    other developers said 'impossible', but I did
+    Linux, node.js, express, HTML5, CSS, backbone, MongoDB, Infobright
+
++ As CTO/co-founder in Vidix startup,
+    I Designed and implemented POC, then MVP, full-stack + android application
+
++ As an architect/leader, I helped a startup called Tymlez grow and go public (IPO)
+
++ I Designed and implemented IoC/DI framework for JavaScript project
+
++ I Designed and implemented DB mirroring by triggers between old and new structures
