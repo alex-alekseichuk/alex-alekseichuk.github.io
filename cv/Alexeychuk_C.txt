@@ -1,4 +1,4 @@
-C/C++ developer
+C developer
 Alexander Alexeychuk
 Email: alex.alekseichuk@gmail.com
 
@@ -7,26 +7,29 @@ Degree: MS, honours degree
 Specialization: Computer science and mathematics
 Graduated: 1999
 
-
 Programming and technology knowledge:
-
-Programming languages, libraries and tools
-  C/C++, Win32, STL, MFC, COM, ATL/WTL,
-  Assembler, SoftIce, IDA, Olly,
+  C, C++,
+  Win32, STL, MFC, COM, ATL/WTL, Qt,
+  valgrind, make, cmake,
   Multiprocess, multithreading, IPC,
-  TCP Sockets
- 
-Databases:
+  TCP Sockets, HTTP,
+  libsodium,
+  Assembler, SoftIce, IDA, Olly,
+  Python, JavaScript,
   MySQL, MSSQL, PostgereSQL, Oracle, Sqlite, Firebird, 
-  MongoDB, LevelDB, Redis
-
-Others:
-  Python, JavaScript, Ruby,
-  Nginx,
-  HTML, CSS,
-  Git, SVN, CVS, hg,
+  MongoDB, LevelDB, Redis,
+  RebbitMQ, Kafka, NATS,
+  git, Docker,
   UML, Patterns
 
+Work experience:
+  2024-2026 in BetBoom as developer
+  2022-2024 in PearlX as developer, then lead
+  2021-2022 in Sygnum AG bank as developer
+  2016-2021 in Tymlez as Senior Developer
+  2010-2015 in Plarium.com as Lead Developer and PM
+  2007-2010 in Arkadium.com as Senior Developer
+  2000-2007 in YesSoftware.com as Software Developer
 
 Certificates:
   'C Programmer' cert. by TekMetrics (BrainBench) 03.1999
@@ -43,9 +46,21 @@ Certificates:
   'Computer Networks' (University of Washington) 2013
 
 
-Some Project:
+Projects:
 
-For hola.org contribute as C developer
+Pure C lib of commons like allocators, string, containers
+https://github.com/alex-alekseichuk/c_common
+
+Pure C console text editor
+https://github.com/alex-alekseichuk/text-editor
+
+Pure C adapter for ATmega32U4 to connect ancient AT keyboard as HID Keyboard via USB.
+https://github.com/alex-alekseichuk/avr_at_keyboard
+
+Qt GUI application fot lights projects
+https://github.com/alex-alekseichuk/lights
+
+For hola.org company contribute as pure C developer
 Tools: gcc, valgrind, vi
 
 Task: special server for track online status and chat function for special communication/media share application
@@ -54,17 +69,20 @@ Tools: linux, postgresql, tcp sockets, gcc, c++, stl, expat, nsis, .net, C#
   - Desing and implemetation linux version of the server application as c++ application
   - Prepare installation of the client application by nsis installer
 
-Task: DemoCharge product (http://www.yessoftware.com/products/product.php?product_id=19)
+Task: DemoCharge product
 Tools: Win32, C++, zlib, SWF, MP3
   - tech. analyst
-  - Desing and implemetation SWF module for generation Flash presentations
+  - Desing and implemetation the lib for generation Flash (.SWF) presentations
+  - process raw audio into MP3
+  - process raw video into keyframe-based sequences
+  - produce ActionScript into Flash (.SWF) content
 
 Task: Implement module for handling Settings area for Enigma communicator device
 Tools: C/C++, STL
   - design and implement Property Sheet GUI component
   - design and implement structures and methods for saving data
 
-Task: CodeCharge Studio product (http://www.codecharge.com)
+Task: CodeCharge Studio product (https://www.yessoftware.com/)
 Tools: Win32, C++, Assembler, Win16, VC++ 1.52, IDA, Olly
   - Desing and implemetation several low-level programing methods to protect the product against software crackers
 
@@ -113,5 +131,3 @@ Task: University term project: Tool for 3D visualization of surfaces like z=f(x,
 Tools: DOS, Turbo C 2.0
   - GUI, math. rendering module, syntax analyzer
   - Z-buffer method implementation
-
-
