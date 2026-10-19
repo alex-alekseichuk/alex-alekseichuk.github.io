@@ -1,0 +1,50 @@
+Here are all the issues I found, grouped by severity:
+
+🔴 Critical / security
+1. SQL injection in get_orders (lines 49–53)
+Both customer_id and month are spliced directly into the SQL string with f-strings:
+f"WHERE customer_id = {customer_id} "
+f"AND to_char(created_at, 'YYYY-MM') = '{month}'"
+month is user-supplied and unvalidated, so this is a direct injection vector. Needs bound parameters: "... = %s ... = %s" with (customer_id, month).
+2. Hardcoded DB credentials (line 18)
+REPORT_DB_DSN = "postgresql://report_admin:Qwerty2024!@db.internal:5432/shop" — username and password in source code. Should come from env/config.
+3. Broken import — openpyxl.export doesn't exist
+I verified against openpyxl 3.1.5: there is no openpyxl.export module, so from openpyxl.export import workbook_to_bytes raises ModuleNotFoundError on import. The standard approach is wb.save(BytesIO()).
+🟠 Correctness / logic bugs
+4. get_orders is missing the status = 'paid' filter
+The docstring says "оплаченные заказы" (paid orders) and get_customer_total filters by status = 'paid', but get_orders returns all orders for the month — pending/cancelled ones will appear in the report.
+5. Missing ORDER BY
+Docstring claims "отсортированы по дате создания" (sorted by creation date), but there's no ORDER BY clause — row order is undefined.
+6. Docstring/behavior mismatch on the empty case
+Line 75 says "Если за месяц нет заказов, бросает ValueError" (raises ValueError if no orders) — but no ValueError is ever raised anywhere. Instead, the code silently swallows the error (see #7) and builds a report with zero rows.
+7. Silent exception swallowing (lines 77–80)
+except Exception:
+    orders = []
+Hides DB failures, connection errors, and bugs — producing a misleading "empty" report instead of failing. It's also inconsistent: get_customer_total (line 97) is not wrapped the same way, so a failure there does propagate.
+8. Inconsistent DB connections
+get_orders uses _connect() (the hardcoded report DSN), while get_customer_total uses app.db.get_connection(). Two different databases for what appears to be the same orders table — one of them is almost certainly wrong/leftover.
+9. Duplicate, inconsistent money formatting
+Local _format_money (per-order rows) vs. imported format_rub (totals row). Two formatters for the same currency in one report — if they format differently, the report is internally inconsistent.
+🟡 Performance
+10. N+1 queries in get_orders (lines 57–60)
+One extra query per order to fetch order_items. Should be a single JOIN orders o ON o.id = oi.order_id query.
+🔵 Edge cases
+11. _format_money(None) crashes — if orders.total is NULL in the DB, f"{None:,.2f}" raises TypeError. Only get_customer_total has COALESCE protection.
+12. Sheet title risk — ws.title = f"Заказы {month}" with unvalidated month could contain Excel-forbidden characters (:\?/*\[]) or exceed 31 chars → openpyxl ValueError.
+13. Timezone sensitivity — to_char(created_at, 'YYYY-MM') on a timestamptz column depends on the DB session's timezone, so month bucketing can drift from what's displayed.
+🧪 Test problems (lines 108–117)
+14. workbook_to_bytes is never mocked — the test mocks Workbook but not the export function, so line 100 calls the real openpyxl exporter with a Mock workbook (and per #3, that function doesn't exist at all). The test cannot pass.
+15. The test contradicts the documented contract — it asserts report is not None (success with an empty month), while the docstring says an empty month should raise ValueError. One of them is wrong; as written, the test locks in the wrong behavior.
+16. File layout mismatch — the header comment says this is app/reports/order_report.py and the section comment says tests/test_order_report.py, but everything lives in one standalone test.py, while the imports (app.db, app.utils.money) don't exist here. The test as written is unrunnable.
+
+Suggested fix plan (if you want me to prepare one)
+
+Parameterize get_orders with %s and validate month with a real regex check (^\d{4}-\d{2}$ + valid month).
+Add status = 'paid' and ORDER BY created_at to the query; fold the items lookup into one JOIN query.
+Drop REPORT_DB_DSN/_connect (or make it the single connection for both functions); remove the hardcoded password.
+Fix the exporter to wb.save(BytesIO()) (or pin the correct API).
+Decide the empty-month contract: either raise ValueError per the docstring, or fix the docstring — and stop swallowing exceptions in build_report.
+Use one formatter (format_rub) everywhere.
+Fix the tests: mock the exporter, assert the correct empty-month behavior, and split the module from the test file.
+Want me to write this up as a formal plan file, or would you like to discuss any of the items (e.g., the empty-month contract or which DB connection is the right one) first?
+
