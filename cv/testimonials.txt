@@ -1,0 +1,73 @@
+What other people say about my work:
+
+28.06.2024 Alex Abramov on code-review:
+"I like this clean controller's method"
+on my refactoring/optimization of PHP/JS
+
+01.04.2024 Shabi:
+"You are genius."
+On my solution for DB mirroring by triggers.
+
+[6 Dec 2021] Andrei Petrescu
+"v-Alexander Alexeychuk ws works with api key, nice job!"
+on my design/implementation/integration of nest.js services
+
+lilyvp 13.11.2020
+On my Performance Test approach for node.js project
+  "@Alexander Alexeychuk that is pretty awesome!"
+
+Angad 12.06.2020
+  You are main person in the team
+Alexander Alekseichuk 12.06.2020
+  I'm shy guy
+Angad 12.06.2020
+  You are my favorite Developer
+Alexander Alekseichuk 12.06.2020
+  thank you
+Angad 12.06.2020
+  It's hard to find such talent
+
+2015-02-02 Peter Johnston Lystable CEO 
+About my work on REST API
+	Hey Alexander, just saw your latest endpoint
+	looking really good
+	thanks for all your work so far
+	Great to have you onboard :)
+2015-02-20 Fergus Doyle Lystable CTO
+	Yeah, he was amazing!
+2015-06-30 Fergus Doyle Lystable CTO
+    it's been an absolute pleasure man
+    thanks for all your work on the product so far
+
+2015-01-22 Katrina Tsang
+About my work on the player application
+	Fantastic! Just checked it out & looks great.
+
+2010-04-12 Sergi Roubuts (Eureka Stroke project)
+	Thank you, Alex, you are doing your job very well. I hope for a long business relationship.
+I've done a lot of work as a web developer on his projects.
+
+2013-01-24 Leon Danilov (Plarium Slots Product Owner) about statistics/analysis system I created:
+	(original in russian)
+    [4:59:50 PM] leon_dan: все норм
+    [5:00:09 PM] leon_dan: сортируем
+    [5:00:23 PM] leon_dan: в любом случае.... инструмент отличный!
+    [5:00:34 PM] leon_dan: просто офигительный
+
+About Advocaten.nl android mobile application I created by PhoneGap/jQueryMobile tech.
+and CMS for Advocaten.nl mobile application:
+2013-02-12 Ysbrand Galama
+	Not a bad start, and quick. Runs well on my Galaxy SII.
+	Again I am surprised how quick this goes. Looks good.
+2013-03-29 Jacob Galama
+	Ok Alexander, thanks very much,
+	This will help too, although I can see it is very intuitive and easy to work with. 
+
+From users who bought Schulte Tables Pro android application:
+Vadim Li on Sep 18, 2014, at 10:20 PM
+	Thank you!
+Ildar Azizbaev on Sep 22, 2014 at 1:05 AM
+	Best. Developers thank you so much.
+Dinamic D on 2014-12-04
+    Cool app Good design, good implementation
+
